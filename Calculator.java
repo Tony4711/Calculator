@@ -9,19 +9,22 @@ public class Calculator
 {
     private CalcEngine engine;
     private UserInterface gui;
+    private HexaUserInterface hexGui;
     
-    public static void main(String[] args) {
-    	Calculator calc = new Calculator();
-    	calc.start();
-    }
+	public static void main(String[] args) 
+	{
+		Calculator calc = new Calculator();
+		calc.calculator();
+	}
 
     /**
      * Create a new calculator and show it.
      */
-    public void start()
+    public void calculator()
     {
         engine = new CalcEngine();
-        gui = new UserInterface(engine);
+        //gui = new UserInterface(engine);
+        hexGui = new HexaUserInterface(engine);
     }
 
     /**
@@ -29,6 +32,7 @@ public class Calculator
      */
     public void show()
     {
-        gui.setVisible(true);
+    	//gui.setVisible(true);
+        hexGui.setVisible(true);
     }
 }
