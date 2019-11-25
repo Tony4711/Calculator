@@ -76,15 +76,8 @@ public class HexaUserInterface extends UserInterface implements ActionListener {
 	}
 	
 	public void redisplay() {
-		if(calc.getDisplayValue() >=0) {
 		String hex = (Integer.toHexString(calc.getDisplayValue())).toUpperCase();
-		display.setText("" + hex);
-		}
-		else
-			display.setText("" + calc.getDisplayValue());
-			
-		
-		
+		display.setText("" + hex);	
 	}
 	
 
