@@ -5,7 +5,6 @@ import javax.swing.JLabel;
 
 public class HexaUserInterface extends UserInterface implements ActionListener {
 
-	protected CalcEngine hexCalc;
 
 	public HexaUserInterface(CalcEngine engine) {
 		super(engine);
