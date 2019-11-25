@@ -21,6 +21,8 @@ public class HexaUserInterface extends UserInterface implements ActionListener {
 		addButton(buttonPanel, "C");
 		addButton(buttonPanel, "B");
 		addButton(buttonPanel, "A");
+		
+		frame.pack();
 	}
 
 	public void actionPerformed(ActionEvent event) {
